@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Удобный кредитный калькулятор</title>
+		<link rel = "stylesheet" href = "styles.css" type = "text/css"></link>
+	</head>
+
+	<body>
+		<div class = 'header'>Кредитный калькулятор </div>
+		<form name = "calc" class = "calc">
+			<label>
+				<input name = "sum" placeholder = "столько" type = "text" class = "needCheck"></abbr>
+				сумма кредита
+			</label>
+			<label>
+				<input name = "term" placeholder = "на столько" type = "text" class = "needCheck">
+				срок в месяцах
+			</label> 
+			<label>
+				<input name = "rate" placeholder = "за столько % в год" type = "text" class = "needCheck">
+				годовая процентная ставка
+			</label> 	
+		 	<label>
+				<abbr title = "Необязательное поле"><input name = "firstPayment" placeholder = "столько внесу" type = "text"></abbr>
+				размер первоначального взноса (добавьте «%», если в процентах)
+			</label>
+			
+			<h3>Тип платежей</h3>
+			<label>
+				<input type = "radio" name = "paymentType" value = "annuitet" checked></input>
+				Аннуитетные (все одинаковые) 
+			</label>
+			<label> 	 
+				<input type = "radio" name = "paymentType" value = "differ" ></input>
+				Дифференцированные (уменьшающиеся каждый месяц) 
+			</label>
+			<input type = "button" value = "Расчёт">
+		</form>
+		<div id = "report"></div>
+		<script src = "gcTools.js"></script>
+		<script src = "newCredit.js"></script>
+		<script src = "groupNums3.js"></script>
+		<script src = "main.js"></script> 
+	</body>
+</html>
