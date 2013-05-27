@@ -6,6 +6,7 @@ function groupThis(e) {
 	this.value = groupNums(this.value);
 }
 
+
 function go(e) {
 	e = e || window.event;
 	if(e.keyCode === 13) gc("input[value = 'Рассчитать']").onclick();
